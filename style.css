@@ -1,0 +1,178 @@
+/* common styles */
+*{
+  font-family: "Mulish", serif;
+}
+.txt-gray{
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+    font-size: 1rem;
+}
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.btn-primary{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    background: #FF5400;
+    border-radius: 8px;
+}
+/* nav styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+.nav-title{
+    display: flex;
+    gap: 5px;
+}
+.nav-title img{
+    margin-top: 35px;
+    margin-right: 10px;
+    width: 48px;
+height: 2.25rem;
+}
+.nav-title h2{
+    font-size: 2.25rem;
+}
+nav ul{
+    list-style: none;
+
+}
+nav li{
+    display: flex;
+}
+nav li a{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Dark-02, #424247);
+}
+.home{
+    color: #FF5400;
+    font-weight: 700;
+}
+h2 span{
+    color: #FF5400;
+}
+/* banner styles */
+.banner{
+    position: relative;
+    border-radius: 16px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat center;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner-title{
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.banner-txt{
+    color: #fff;
+    margin-bottom: 50px;
+}
+.form{
+    display: inline-flex;
+    padding: 16px;  
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+}
+input, select, button{
+    width: 175px;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+background: #FFF;
+text-align: center;
+font-weight: 400;
+font-size: 1rem;
+color: rgba(19, 19, 24, 0.50);
+}
+
+/* tour section styles */
+.tour{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.tour-title{
+    color: #131318;
+    margin-bottom: 25px;
+font-size: 2.75rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.tour-content ul{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tour-btn{
+    margin-top: 25px;
+}
+.tour-image img{
+    border-radius: 16px;
+}
+/* media query for mobile */
+@media screen and (max-width: 600px) {
+    nav,
+    nav li,
+    .form{
+        padding: 0;
+        flex-direction: column;
+    }
+    
+    nav li a{
+        padding: 10px;
+    }
+    nav ul{
+        margin: 0 auto;
+    }
+    .nav-title{
+        padding:0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-flex;
+    }
+    .banner{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 95%;
+        height: 100%;
+        overflow: scroll;
+        padding-bottom: 30px;
+    }
+    .banner-content{
+        padding: 0;
+        margin: 0;
+        width: 90%;
+    }
+    .tour{
+        padding-top: 20px;
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    
+}
