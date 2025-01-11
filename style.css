@@ -162,17 +162,27 @@ line-height: normal;
         width: 95%;
         height: 100%;
         overflow: scroll;
-        padding-bottom: 30px;
     }
     .banner-content{
         padding: 0;
         margin: 0;
-        width: 90%;
+        /* width: 90%; */
     }
     .tour{
-        padding-top: 20px;
-        margin: 0;
-        flex-direction: column-reverse;
+        padding-top: 900px;
+        width: 80%;
+        gap: 20px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .tour-content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 auto;
+        align-items: center;
+    }
+    .tour-image img{
+        width: 100%;
     }
     
 }
